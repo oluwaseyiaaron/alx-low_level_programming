@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * prints all the numbers less than 5
+ * prints all the numbers less than 10
  *
  * Return: Return 0
  */
@@ -11,7 +11,7 @@ int main(void)
 	int num;
 
 	num = 0;
-	while (num <= 5)
+	while (num < 10)
 	{
 		printf("%d", num);
 		num++;
