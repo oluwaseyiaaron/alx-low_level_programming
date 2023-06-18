@@ -15,6 +15,8 @@ int main(void)
 	{
 		putchar('0' + num);
 		num++;
+		if (num == 10)
+			continue;
 		putchar(',');
 		putchar(' ');
 	}
