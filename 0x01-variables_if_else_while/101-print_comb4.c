@@ -16,8 +16,6 @@ int main(void)
 		{
 			for (c = 2; c < 10; c++)
 			{
-				if (b > a || c > b)
-				{
 					putchar('0' + a);
 					putchar('0' + b);
 					putchar('0' + c);
@@ -27,7 +25,6 @@ int main(void)
 						putchar(',');
 						putchar(' ');
 					}
-				}
 			}
 		}
 	}
