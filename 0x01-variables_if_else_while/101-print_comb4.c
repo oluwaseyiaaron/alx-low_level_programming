@@ -16,15 +16,15 @@ int main(void)
 		{
 			for (c = 2; c < 10; c++)
 			{
-					putchar('0' + a);
-					putchar('0' + b);
-					putchar('0' + c);
-					if ((a == 7 && b == 8) && c == 9)
-						continue;
-					{
-						putchar(',');
-						putchar(' ');
-					}
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+				putchar((c % 10) + '0');
+				if ((a == 7 && b == 8) && c == 9)
+					continue;
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
