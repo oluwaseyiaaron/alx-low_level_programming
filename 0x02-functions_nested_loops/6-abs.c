@@ -3,6 +3,8 @@
  * _abs - function that completes the absolute value of
  *       an integer
  *
+ * @n: takes in integer type input for function
+ *
  * Return: always 0
  */
 int _abs(int n)
