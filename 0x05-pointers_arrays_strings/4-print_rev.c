@@ -5,10 +5,9 @@
  */
 void print_rev(char *s)
 {
-	while (*s != '\0')
-	{
-		_putchar(*s + 0);
-		s++;
-	}
+	for (index = 0; s[index] != '\0'; ++index)
+
+	for (--index; index >= 0; --index)
+		_putchar(s[index]);
 	_putchar('\n');
 }
