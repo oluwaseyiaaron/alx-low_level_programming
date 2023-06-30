@@ -3,9 +3,7 @@
  * _strcmp - to compare two strings
  * @s1: first string
  * @s2: second string
- * Return: +ve is greater than
- * 	-ve if less than
- * 	0 if equal to
+ * Return: +v, -ve or 0
  */
 int _strcmp(char *s1, char *s2)
 {
