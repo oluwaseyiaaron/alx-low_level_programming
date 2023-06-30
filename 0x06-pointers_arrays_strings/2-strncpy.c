@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncpy - to copy a string a n byte of one string(source) to another string(destination)
+ * _strncpy - to copy a string a n byte of a string
  * @dest: the destination string
  * @src: the source of the string
  * @n: the number of bytes to copy
@@ -12,10 +12,12 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 
 	i = 0;
-	/*while i is less than the specified byte AND the src is has not reach the null terminator*/
+	/*while i is less than the specified byte*/
+	/*AND the src is has not reach the null terminator*/
 	while (i < n && src[i] != '\0')
 	{
-		/*let the specified amount of the string from src be equal to the dest variale*/
+		/*let the specified amount of the string
+		 * from src be equal to the dest variale*/
 		dest[i] = src[i];
 		i++;
 	}
