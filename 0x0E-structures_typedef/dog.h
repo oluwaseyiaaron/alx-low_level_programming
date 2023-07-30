@@ -7,14 +7,16 @@
  * @age: second member
  * @owner: third member
  */
-struct dog{
+struct dog
+{
 	char *name;
 	float age;
 	char owner;
 };
 
-/*
- * doggie - typedef for struct dog*/
+/**
+ * doggie - typedef for struct dog
+ */
 typedef struct dog doggie;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
