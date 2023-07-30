@@ -6,6 +6,7 @@
  * @name: first member
  * @age: second member
  * @owner: third member
+ * Description: name, age and owner of a dog
  */
 struct dog
 {
@@ -17,7 +18,7 @@ struct dog
 /**
  * doggie - typedef for struct dog
  */
-typedef struct dog doggie;
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
