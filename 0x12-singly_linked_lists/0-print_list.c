@@ -1,8 +1,11 @@
+#include <stdio.h>
 #include "lists.h"
+
 /**
- * print_list - to print the element of a singly linked list
- * @h: pointer to the string
- * Return: number of the nodes
+ * print_list - prints all the elements of a linked list
+ * @h: pointer to the list_t list to print
+ *
+ * Return: the number of nodes printed
  */
 size_t print_list(const list_t *h)
 {
@@ -11,14 +14,10 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 		if (!h->str)
-		{
-			printf("[0] (nil)");
-		}
+			printf("[0] (nil)\n");
 		else
-			print("[%u] %s\n", h->len, h->str);
+			printf("[%u] %s\n", h->len, h->str);
 		h = h->next;
 		s++;
-	}
-	return (s);
+		return (s);
 }
-
